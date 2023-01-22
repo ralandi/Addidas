@@ -32,8 +32,34 @@
         <a href="#" class="user-id"><img src="https://images.unsplash.com/photo-1510227272981-87123e259b17?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=3759e09a5b9fbe53088b23c615b6312e" alt=""></a>
     </div>
    </header>
-   <section class="wrapper">
+   <section class=" hero wrapper">
+    <img class="hero-img" src="/assets/puma.png" alt="">
+    <h1 class="big-txt">underground</h1>
+    <div class="hero-copy">
+        <h5>29 underground sneaker</h5>
+        <p>Designed by Puma</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+    </div>
+    <div class="color-picker d-flex h-center">
+        <h6>Choose your colors</h6>
+        <input type="color" name="red" value="#ff6347">
+        <input type="color" name="red" value="#477eff">
+        <input type="color" name="red" value="#cd47ff">
+        <input type="color" name="red" value="#a9a9a9">
+    </div>
 
    </section>
+   <section class="wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque adipisci voluptatum aliquam nam nisi deleniti velit obcaecati asperiores praesentium inventore eligendi labore debitis reprehenderit culpa cumque facere, perferendis nostrum soluta?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum facere suscipit molestiae aliquam quae ipsum, neque cumque, deleniti molestias incidunt ad provident quaerat, officia fugit omnis nisi soluta dolor!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, pariatur corrupti, nesciunt amet, perspiciatis voluptatem facilis cumque illo tempore reprehenderit nam nobis dolorem inventore reiciendis. Vero autem veritatis deserunt culpa!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempore minus, esse magni earum animi laboriosam harum quam officiis voluptatum tenetur quod, ex minima, accusamus ratione ea saepe quae repellat.
+   </section>
+   <script>
+    var elem = document.querySelector(".hero-img");
+    window.addEventListener('scroll', function() {
+    var value = window.scrollY * 0.25;
+    elem.style.transform = `rotate(${value}deg)`; 
+    });
+</script>
 </body>
 </html>

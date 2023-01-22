@@ -97,7 +97,9 @@ p {margin-bottom: 1rem;}
 
 .big-txt {
     font-family: grizzly;
-    font-size: 10em;
+    font-size: 8em;
+    mix-blend-mode: difference;
+    filter: invert(1);
 }
 
 h1, h2, h3, h4, h5 {
@@ -109,7 +111,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.052rem;
+  font-size: 3rem;
 }
 
 h2 {font-size: 2.441rem;}
@@ -124,6 +126,19 @@ small, .text_small {font-size: 0.8rem;}
 /*END TYPO*/
 
 /*Global styles*/
+.btn{
+    padding: 8px 16px;
+    color: #363636;
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: tomato;
+    color: white;
+    border-radius: 30px;
+    padding: 16px 32px;
+    margin-top: 1em;
+}
+
 section, header {
     background-color: #f3f3f5;
 }
@@ -131,6 +146,7 @@ section, header {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 3em;
 }
 .d-flex {
     display: flex;
@@ -156,7 +172,7 @@ section, header {
 /*Main Styles*/
 header {
     border-radius: 30px 30px 0 0;
-    margin: 4em auto;
+    margin: 4em auto 0;
     width: 90%;
     max-width: 1400px;
     padding: 3em;
@@ -170,11 +186,48 @@ nav a{
 .logo {
     width: 4em;
 }
+.hero {
 
+    position: relative;
+}
 .user-id img{
     width: 50px;
     height: 50px;
     background-color: burlywood;
     clip-path: circle(50% at 50% 50%);
 }
+
+.hero img {
+    transform: rotate(333deg);
+    margin: auto;
+}
+
+.hero .big-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-copy{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+.hero-copy h5{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.hero-copy p {
+    margin-bottom: 2em;
+}
+.color-picker h6 {
+    margin-right: 2em;
+}
+.color-picker input{
+    border: none;
+    height: 27px;
+    width: 27px;
+}
+
 /*END Main Styles*/
